@@ -1,6 +1,8 @@
 # Traditional Approach w/ Cypress
 
-This project is the pure Cypress approach. It was fun working with the demo app since it was clearly designed to test the limits of a functional testing framework. I think my 
+This project is the pure Cypress approach. It was fun working with the demo app since it was clearly designed to test the limits of a functional testing framework. I gave a good effort on all the specifications and tried to mention all of the challenges I encountered below for each test.
+
+To see these tests augmented with Applitools, check out [this directory](https://github.com/erdavids/Applitools-Hackathon-2019/tree/master/Applitools).
 
 ## Running the Tests
 
@@ -70,6 +72,3 @@ I assumed when I started this project that there would be a specification that c
 This test is used to check for two flashing advertisements. I think this test was designed to showcase the customizable regions for the upcoming Applitools test.
 - The Cypress test was able to detect the lack of the first flashing advertisement but not the difference in the remaining one.
 
-## Conclusion
-
-This application was well designed to highlight some of the limitations around using one tool. There are several instances where it's obvious a visual approach would help tremendously. To see these tests augmented with Applitools, check out [this directory](https://github.com/erdavids/Applitools-Hackathon-2019/tree/master/Applitools).
