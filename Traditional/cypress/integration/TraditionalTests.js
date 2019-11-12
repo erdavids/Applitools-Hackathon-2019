@@ -8,12 +8,12 @@
 /////////////
 
 // Version 1 (Working Versions)
-const main_app = 'https://demo.applitools.com/hackathon.html'
-const ad_page = 'https://demo.applitools.com/hackathon.html?showAd=true'
+// const main_app = 'https://demo.applitools.com/hackathon.html'
+// const ad_page = 'https://demo.applitools.com/hackathon.html?showAd=true'
 
 // Version 2 (Broken Versions)
-// const main_app = 'https://demo.applitools.com/hackathonV2.html'
-// const ad_page = 'https://demo.applitools.com/hackathonV2.html?showAd=true'
+const main_app = 'https://demo.applitools.com/hackathonV2.html'
+const ad_page = 'https://demo.applitools.com/hackathonV2.html?showAd=true'
 
 /////////////
 /* 
@@ -238,6 +238,9 @@ describe('Canvas Chart Test', function() {
         cy.login('test-username', 'test-password')
         cy.get('#showExpensesChart').click()
 
+        cy.get('#canvas')
+            .should('be.visible')
+
         // This test cannot be automated with Cypress alone
         // The chart is within an inaccessible canvas element
 
@@ -246,7 +249,7 @@ describe('Canvas Chart Test', function() {
     })
 })
 
-describe('Dynamic Content Test', function() {
+describe.only('Dynamic Content Test', function() {
     it('displays the first flashing advertisement', () => {
         // Version 1 (Working Version)
         cy.visit(ad_page)
