@@ -28,6 +28,6 @@ I've done my best to create well written tests to the specifications of the cont
 
 - **Traditional**: This suite uses only Cypress to test the demo application provided by Applitools. Cypress is an amazing tool, but the application is designed to highlight some of the pitfalls of relying on one tool.
 
-- **Applitools**: This suite also uses Cypress but in more of a navigational capacity. Although I could have added the code to utilize Applitools while preserving the Cypress, they are designed for this project to only rely on visual validation.
+- **Applitools**: This suite also uses Cypress but in more of a navigational capacity. Although I could have added the code to utilize Applitools while preserving the functional logic, these tests are designed to rely on visual validation.
 
-I've included more documentation on each of these approaches inside their respective directories. 
+I've included detailed documentation on each of these approaches inside their respective directories. 
