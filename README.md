@@ -4,7 +4,7 @@ This project represents a complete submission for the [Applitools Visual AI Rock
 
 ## Tools
 
-**Applitools** is an amazing tool that allows you to find visual differences between screenshots of an application. At some point you will set a *baseline*, or expected image, for a particular view. On future test runs, you'll compare *checkpoints* against the baseline.
+**Applitools** is an amazing tool that allows you to find visual differences between screenshots of an application. At some point you will set a *baseline*, or expected image, for a particular view. On future test runs, you'll compare *checkpoints* against the baseline. Applitools will show you issues that can be found with other tools, but also issues that would have been missed otherwise.
 
 You can find out more about Applitools [here](https://applitools.com/).
 
