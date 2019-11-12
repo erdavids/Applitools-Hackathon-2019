@@ -18,6 +18,8 @@ npx cypress run
 npx cypress open
 ```
 
+In order to run the tests against version 2 of the application, look for the **URLS USED** section at the top of the **Cypress > integration > TraditionalTests.js** file.
+
 ## Version 1 Test Results
 
 <p align="center"><img src="https://github.com/erdavids/Applitools-Hackathon-2019/blob/master/Traditional/Images/terminal-test-v1.png"></p>
