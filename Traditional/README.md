@@ -36,6 +36,8 @@ Once it's open, click on the **TraditionalTests.js** to execute the tests.
 
 ## Version 2 Test Results
 
+<p align="center"><img src="https://github.com/erdavids/Applitools-Hackathon-2019/blob/master/Images/traditional-run-v2.png"></p>
+
 ## Challenges
 
 You can see above that the second version of the app was not kind to my tests. The breaking changes to the application do exist deliberately, so this is a good sign that the Cypress tests are picking up on some things that are wrong, but there are also errors that it did not find. The biggest issue is the consideration of the amount of time it would take to maintain and improve these tests each time a breaking change is introduced to the application. I'll talk a little more about that in the Applitools directory.
