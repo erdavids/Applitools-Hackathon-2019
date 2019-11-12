@@ -8,12 +8,12 @@
 /////////////
 
 // Version 1 (Working Versions)
-const main_app = 'https://demo.applitools.com/hackathon.html'
-const ad_page = 'https://demo.applitools.com/hackathon.html?showAd=true'
+// const main_app = 'https://demo.applitools.com/hackathon.html'
+// const ad_page = 'https://demo.applitools.com/hackathon.html?showAd=true'
 
 // Version 2 (Broken Versions)
-// const main_app = 'https://demo.applitools.com/hackathonV2.html'
-// const ad_page = 'https://demo.applitools.com/hackathonV2.html?showAd=true'
+const main_app = 'https://demo.applitools.com/hackathonV2.html'
+const ad_page = 'https://demo.applitools.com/hackathonV2.html?showAd=true'
 
 /////////////
 /* 
@@ -72,7 +72,6 @@ describe('Login Page UI Elements Test', function() {
 
         cy.eyesClose();
     })
-
 })
 
 describe('Data-Driven Test', function() {
@@ -138,6 +137,8 @@ describe('Canvas Chart Test', function() {
             browser: { width: 800, height: 600 },
         });
 
+        cy.wait(2000)
+
         cy.eyesCheckWindow('Expenses Comparison (2017, 2018)')
 
         // This test cannot be automated with Cypress alone
@@ -146,13 +147,15 @@ describe('Canvas Chart Test', function() {
         // The next dataset can be added, but cannot be validated
         cy.get('#addDataset').click()
 
+        cy.wait(2000)
+
         cy.eyesCheckWindow('Expenses Comparison (2017, 2018, 2019)')
 
         cy.eyesClose();
     })
 })
 
-describe.only('Dynamic Content Test', function() {
+describe('Dynamic Content Test', function() {
     it('displays both flashing advertisements', () => {
         cy.eyesOpen({
             appName: 'Applitools Hackathon Demo App',

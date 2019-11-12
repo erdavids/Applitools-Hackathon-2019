@@ -8,12 +8,12 @@
 /////////////
 
 // Version 1 (Working Versions)
-// const main_app = 'https://demo.applitools.com/hackathon.html'
-// const ad_page = 'https://demo.applitools.com/hackathon.html?showAd=true'
+const main_app = 'https://demo.applitools.com/hackathon.html'
+const ad_page = 'https://demo.applitools.com/hackathon.html?showAd=true'
 
 // Version 2 (Broken Versions)
-const main_app = 'https://demo.applitools.com/hackathonV2.html'
-const ad_page = 'https://demo.applitools.com/hackathonV2.html?showAd=true'
+// const main_app = 'https://demo.applitools.com/hackathonV2.html'
+// const ad_page = 'https://demo.applitools.com/hackathonV2.html?showAd=true'
 
 /////////////
 /* 
@@ -61,10 +61,33 @@ describe('Login Page UI Elements Test', function() {
             .should('be.visible')
             .should('contain', 'Login Form')
     })
+
+    it('has a username icon', () => {
+        cy.get(':nth-child(1) > .pre-icon')
+            .should('be.visible')
+    })
+
+    it('has a username label', () => {
+        cy.get(':nth-child(1) > label')
+            .should('be.visible')
+            .should('have.text', 'Username')
+    })
+
     it('has a username field', () => {
         cy.get('#username')
             .should('be.visible')
             .should('have.attr', 'placeholder', 'Enter your username')
+    })
+
+    it('has a password icon', () => {
+        cy.get(':nth-child(2) > .pre-icon')
+            .should('be.visible')
+    })
+
+    it('has a password label', () => {
+        cy.contains('Password')
+            .should('be.visible')
+            .should('have.text', 'Password')
     })
 
     it('has a password field', () => {
@@ -73,29 +96,29 @@ describe('Login Page UI Elements Test', function() {
             .should('have.attr', 'placeholder', 'Enter your password')
     })
 
-    it('has a Log In button', () => {
+    it('has a log in button', () => {
         cy.get('#log-in')
             .should('be.visible')
     })
 
-    it('has a Remember Me option', () => {
+    it('has a remember me option', () => {
         cy.get('.form-check-label')
             .should('be.visible')
     })
 
-    it('has a Twitter social media link', () => {
+    it('has a twitter social media link', () => {
         cy.get('[style="display: inline-block; margin-bottom:4px;"] > img')
             .should('be.visible')
             .should('have.attr', 'src', 'img/social-icons/twitter.png')
     })  
 
-    it('has a Facebook social media link', () => {
+    it('has a facebook social media link', () => {
         cy.get(':nth-child(2) > img')
             .should('be.visible')
             .should('have.attr', 'src', 'img/social-icons/facebook.png')
     })
 
-    it('has a LinkedIn social media link', () => {
+    it('has a linkedin social media link', () => {
         cy.get(':nth-child(3) > img')
             .should('be.visible')
             .should('have.attr', 'src', 'img/social-icons/linkedin.png')
