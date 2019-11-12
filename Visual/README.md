@@ -34,7 +34,7 @@ export APPLITOOLS_API_KEY=<your_key>
 
 Keep in mind that in order to use ```npx``` you may need an updated version of npm.
 
-In order to run the tests against version 2 of the application, look for the **URLS USED** section at the top of the **Cypress > integration > VisualTests.js** file.
+The tests are located at **cypress > integration > VisualTests.js**. In order to run the tests against version 2 of the application, look for the **URLS USED** section at the top of the file.
 
 ## Version 1 Test Results
 
