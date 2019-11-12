@@ -4,18 +4,18 @@ This was the fun approach. I removed the majority of the functional testing logi
 
 ## Running the Tests
 
-In order to execute the tests, you can rely on the documentation found [here](https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements).
+In order to execute the Cypress tests, you can rely on the documentation found [here](https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements).
 
 An overview of the necessary commands can be found below:
 
 ```
-// Installs to your ./node_modules directory
+// Installs Cypress to your ./node_modules directory
 npm install cypress
 
-// Executes your tests through the command line
+// Execute your tests through the command line
 npx cypress run
 
-// Alternatively, open the Cypress application and test
+// Alternatively, open the Cypress application
 npx cypress open
 ```
 
