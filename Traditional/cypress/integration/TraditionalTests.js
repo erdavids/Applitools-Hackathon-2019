@@ -159,7 +159,7 @@ describe('Data-Driven Test', function() {
     })
 })
 
-
+// Verify table data after sorting by amount column
 describe('Table Sort Test', function() {
     it('maintains data integrity with table sorted by ascending amounts', () => {
         cy.login('test.username', 'test.password')
@@ -251,11 +251,10 @@ describe('Table Sort Test', function() {
             })
 
     })
-    
-
 
 })
 
+// Verify the data of the expenses bar chart
 describe('Canvas Chart Test', function() {
     it('has a logo', () => {
         cy.login('test-username', 'test-password')
@@ -272,9 +271,9 @@ describe('Canvas Chart Test', function() {
     })
 })
 
+// Verify the displayed flashing advertisements
 describe('Dynamic Content Test', function() {
     it('displays the first flashing advertisement', () => {
-        // Version 1 (Working Version)
         cy.visit(ad_page)
 
         cy.login('test-username', 'test-password')

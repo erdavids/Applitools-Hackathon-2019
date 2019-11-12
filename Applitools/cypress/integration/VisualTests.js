@@ -37,6 +37,7 @@ Cypress.Commands.add('login', (username, password) => {
         .click()
 })
 
+// Clears the input fields for username and password
 Cypress.Commands.add('clearauth', () => {
     cy.get('#username')
         .clear()
@@ -58,6 +59,7 @@ beforeEach(() => {
     cy.visit(main_app)
 })
 
+// Verify the Login Page's Appearance
 describe('Login Page UI Elements Test', function() {
 
     it('displays all elements on the authentication page', () => {
@@ -74,6 +76,7 @@ describe('Login Page UI Elements Test', function() {
     })
 })
 
+// Test different login attempts
 describe('Data-Driven Test', function() {
     it('fails authentication without both username and password', () => {
         cy.eyesOpen({
@@ -101,6 +104,7 @@ describe('Data-Driven Test', function() {
     })
 })
 
+// Verify table data after sorting by amount column
 describe('Table Sort Test', function() {
     it('maintains data integrity with table sorted by ascending amounts', () => {
         cy.eyesOpen({
@@ -126,6 +130,7 @@ describe('Table Sort Test', function() {
 
 })
 
+// Verify the data of the expenses bar chart
 describe('Canvas Chart Test', function() {
     it('displays an expenses chart with the option to add on', () => {
         cy.login('test-username', 'test-password')
@@ -155,6 +160,7 @@ describe('Canvas Chart Test', function() {
     })
 })
 
+// Verify the displayed flashing advertisements
 describe('Dynamic Content Test', function() {
     it('displays both flashing advertisements', () => {
         cy.eyesOpen({
