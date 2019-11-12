@@ -2,7 +2,7 @@
 
 This is the pure Cypress approach. It was fun working with the demo app since it was clearly designed to test the limits of a functional testing framework. I gave a good effort on all the specifications and tried to mention all of the challenges I encountered below for each test.
 
-To see these tests augmented with Applitools, check out [this directory](https://github.com/erdavids/Applitools-Hackathon-2019/tree/master/Applitools).
+To see these tests augmented with Applitools, check out [this directory](https://github.com/erdavids/Applitools-Hackathon-2019/tree/master/Visual).
 
 ## Running the Tests
 
