@@ -70,4 +70,6 @@ I assumed when I started this project that there would be a specification that c
 This test is used to check for two flashing advertisements. I think this test was designed to showcase the customizable regions for the upcoming Applitools test.
 - The Cypress test was able to detect the lack of the first flashing advertisement but not the difference in the remaining one.
 
-To see these tests augmented with Applitools, check out [this directory](https://github.com/erdavids/Applitools-Hackathon-2019/tree/master/Applitools).
+## Conclusion
+
+This application was well designed to highlight some of the limitations around using one tool. There are several instances where it's obvious a visual approach would help tremendously. To see these tests augmented with Applitools, check out [this directory](https://github.com/erdavids/Applitools-Hackathon-2019/tree/master/Applitools).
