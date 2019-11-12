@@ -8,12 +8,12 @@
 /////////////
 
 // Version 1 (Working Versions)
-// const main_app = 'https://demo.applitools.com/hackathon.html'
-// const ad_page = 'https://demo.applitools.com/hackathon.html?showAd=true'
+const main_app = 'https://demo.applitools.com/hackathon.html'
+const ad_page = 'https://demo.applitools.com/hackathon.html?showAd=true'
 
 // Version 2 (Broken Versions)
-const main_app = 'https://demo.applitools.com/hackathonV2.html'
-const ad_page = 'https://demo.applitools.com/hackathonV2.html?showAd=true'
+// const main_app = 'https://demo.applitools.com/hackathonV2.html'
+// const ad_page = 'https://demo.applitools.com/hackathonV2.html?showAd=true'
 
 /////////////
 /* 
