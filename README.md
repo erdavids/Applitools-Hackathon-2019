@@ -28,7 +28,7 @@ The purpose of the hackathon is to spread the word about all the benefits Applit
 
 I've done my best to create well written tests to the specifications of the contest. My project contains two directories with two differing test suites.
 
-- **Traditional**: This suite uses only Cypress to test the demo application provided by Applitools. Cypress is an amazing tool, but the application is designed to highlight some of the pitfalls of relying on one tool.
+- **Traditional**: This suite uses only Cypress to test the demo application provided by Applitools. Cypress is an amazing tool, but the application is designed to highlight some of the pitfalls of functional testing.
 
 - **Visual**: This suite also uses Cypress but in more of a navigational capacity. Although I could have added the code to utilize Applitools while preserving the functional logic, these tests are designed to rely on visual validation.
 
