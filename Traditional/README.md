@@ -20,11 +20,15 @@ npx cypress open
 
 ## Version 1 Test Results
 
-<p align="center"><img src="https://github.com/erdavids/Applitools-Hackathon-2019/blob/master/Images/traditional-full-run.png"></p>
+<p align="center"><img src="https://github.com/erdavids/Applitools-Hackathon-2019/blob/master/Traditional/Images/terminal-test-v1.png"></p>
+
+<p align="center"><img src="https://github.com/erdavids/Applitools-Hackathon-2019/blob/master/Traditional/Images/traditional-full-run.png"></p>
 
 ## Version 2 Test Results
 
-<p align="center"><img src="https://github.com/erdavids/Applitools-Hackathon-2019/blob/master/Images/traditional-run-v2.png"></p>
+<p align="center"><img src="https://github.com/erdavids/Applitools-Hackathon-2019/blob/master/Traditional/Images/terminal-test-v2.png"></p>
+
+<p align="center"><img src="https://github.com/erdavids/Applitools-Hackathon-2019/blob/master/Traditional/Images/traditional-run-v2.png"></p>
 
 ## Challenges
 
