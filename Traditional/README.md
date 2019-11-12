@@ -1,22 +1,20 @@
 # Traditional Approach w/ Cypress
 
-This project is the pure Cypress approach. It was fun working with the demo app since it was clearly designed to test the limits of a functional testing framework. I gave a good effort on all the specifications and tried to mention all of the challenges I encountered below for each test.
+This is the pure Cypress approach. It was fun working with the demo app since it was clearly designed to test the limits of a functional testing framework. I gave a good effort on all the specifications and tried to mention all of the challenges I encountered below for each test.
 
 To see these tests augmented with Applitools, check out [this directory](https://github.com/erdavids/Applitools-Hackathon-2019/tree/master/Applitools).
 
 ## Running the Tests
 
-In order to execute the tests, you can rely on the documentation found [here](https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements)
-
-An overview of the necessary commands can be found below:
+In order to execute the tests, you can rely on the documentation found [here](https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements). An overview of the necessary commands can be found below:
 ```
-// Installs to your ./node_modules directory
+// Installs Cypress to your ./node_modules directory
 npm install cypress
 
-// Executes your tests through the command line
+// Execute your tests through the command line
 npx cypress run
 
-// Alternatively, open the Cypress application and test
+// Alternatively, open the Cypress application
 npx cypress open
 ```
 
@@ -34,9 +32,9 @@ npx cypress open
 
 ## Challenges
 
-You can see above that the second version of the app was not kind to my tests. The breaking changes to the application do exist deliberately, so this is a good sign that the Cypress tests are picking up on some things that are wrong, but there are also several errors that it did not find. 
+You can see above that the second version of the app was not kind to my tests. The breaking changes to the application do exist deliberately, so this is a good sign that the Cypress tests are picking up on some things that are wrong, but there are also several errors that they did not find. 
 
-The biggest issue with relying solely on functional testsis the consideration of the amount of time it would take to maintain and improve these tests each time a breaking change is introduced to the application. I'll talk a little more about that in the Applitools directory.
+The biggest issue with relying solely on functional tests is the amount of time it would take to maintain and improve these tests each time a breaking change is introduced to the application. I'll talk a little more about that in the Applitools directory.
 
 This test suite is made up of the following five tests, each with their own unique challenges:
 
@@ -55,7 +53,7 @@ Different combinations of inputs are used to test authentication. It's a simple 
     
 ### Table Sort Test
 This was the largest challenge of the project to work through with remaining sanity. The task is to sort a table in ascending order of the amount column and then verify the arrangement and data of each row. 
-- I spent a long time trying to find the best way to do this in Cypress alone. I know that it can be done in a much cleaner way than I have designed it, but I found myself looking forward to the convenience of validating the entire table in one call to Applitools. Each element of each row contains a diverse combination of classes, ids, inline styles, image sources, and colors. My eventual solution was to create a table (an array of arrays) and validate each element of each row sequentially, repeated for every row.
+- I spent a long time trying to find the best way to do this in Cypress alone. I know that it can be done in a much cleaner way than I have designed it, but I found myself looking forward to the convenience of validating the entire table in one call to Applitools. Each element of each row contains a diverse combination of classes, ids, inline styles, image sources, and colors. My eventual solution was to create a table (an array of arrays) and validate each element of a row sequentially, repeated for every row.
 - The solution works well for this data set but would be useless with any changes or additions. The test does identify the issue with sorting in version 2 of the app, but the code used to get there would be a nightmare to maintain in light of an alternative solution like Applitools.
 
 <p align="center"><img src="https://github.com/erdavids/Applitools-Hackathon-2019/blob/master/Traditional/Images/table-unsorted.png"></p>
@@ -63,8 +61,9 @@ This was the largest challenge of the project to work through with remaining san
 <p align="center"><img src="https://github.com/erdavids/Applitools-Hackathon-2019/blob/master/Traditional/Images/table-code.png"></p>
     
 ### Canvas Chart Test
-I assumed when I started this project that there would be a specification that couldn't be tested functionally. This was the one, in the form of a bar graph displayed within an inaccessible canvas element. I'm sure that there might be some way to access the chart that I am not aware of, but I spent little time here and quickly moved on. 
+I assumed when I started this project that there would be a specification that couldn't be tested functionally. This was the one, in the form of a bar graph displayed within an inaccessible canvas element.
 - The test passes in version 1 and 2 simply because it confirms that the canvas is visible and clicks to add an additional dataset. No useful verification takes place as anything could be inside.
+- I'm sure that there might be some way to access the chart that I am not aware of, but I spent little time here and quickly moved on. 
 
 <p align="center"><img src="https://github.com/erdavids/Applitools-Hackathon-2019/blob/master/Traditional/Images/canvas-object.png"></p>
 
