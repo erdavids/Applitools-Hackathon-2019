@@ -18,7 +18,7 @@ npx cypress run
 npx cypress open
 ```
 
-In order to run the tests against version 2 of the application, look for the **URLS USED** section at the top of the **Cypress > integration > TraditionalTests.js** file.
+The tests are located at **cypress > integration > TraditionalTests.js**. In order to run the tests against version 2 of the application, look for the **URLS USED** section at the top of the file.
 
 ## Version 1 Test Results
 
