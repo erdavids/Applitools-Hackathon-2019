@@ -37,7 +37,6 @@ Cypress.Commands.add('login', (username, password) => {
         .click()
 })
 
-
 //////////////
 /*
 ** TRADITIONAL TESTS

@@ -44,7 +44,6 @@ Cypress.Commands.add('clearauth', () => {
 
     cy.get('#password')
         .clear()
-    
 })
 
 
@@ -123,11 +122,7 @@ describe('Table Sort Test', function() {
         cy.eyesCheckWindow('Recent Transactions - Sorted by Ascending Amount');
 
         cy.eyesClose();
-
     })
-    
-
-
 })
 
 // Verify the data of the expenses bar chart
@@ -176,6 +171,5 @@ describe('Dynamic Content Test', function() {
         cy.eyesCheckWindow('Two Flashing Advertisements')
 
         cy.eyesClose();
-
     })
 })
