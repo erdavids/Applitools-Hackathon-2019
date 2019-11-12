@@ -5,20 +5,15 @@
 /*
 ** URLS USED
 */
+/////////////
 
 // Version 1 (Working Versions)
 const main_app = 'https://demo.applitools.com/hackathon.html'
 const ad_page = 'https://demo.applitools.com/hackathon.html?showAd=true'
 
 // Version 2 (Broken Versions)
-//const main_app = 'https://demo.applitools.com/hackathonV2.html'
-//const ad_page = 'https://demo.applitools.com/hackathonV2.html?showAd=true'
-
-
-// Open the application before every test
-beforeEach(() => {
-    cy.visit(main_app)
-})
+// const main_app = 'https://demo.applitools.com/hackathonV2.html'
+// const ad_page = 'https://demo.applitools.com/hackathonV2.html?showAd=true'
 
 /////////////
 /* 
@@ -48,6 +43,12 @@ Cypress.Commands.add('login', (username, password) => {
 ** TRADITIONAL TESTS
 */
 //////////////
+
+// Open the application before every test
+beforeEach(() => {
+    cy.visit(main_app)
+})
+
 describe('Login Page UI Elements Test', function() {
 
     it('has a logo', () => {
