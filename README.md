@@ -10,7 +10,7 @@ You can find out more about Applitools [here](https://applitools.com/).
 
 **Cypress** is the greatest end-to-end testing framework for web applications that I've used. Period. It's easy to configure, executes quickly, and gives you complete control over the application running in the browser.
 
-You can find out more about Cypress [here](https://www.cypress.io/)
+You can find out more about Cypress [here](https://www.cypress.io/).
 
 ## The Contest
 
@@ -22,4 +22,12 @@ The purpose of the hackathon is to spread the word about all the benefits Applit
 
 - **Applitools creates a common ground for Quality Engineers, Software Developers, and Business Owners.** While it can be hard communicating the details of unfamiliar frameworks, Applitools lets you visually point out the issues and quickly identify solutions.
 
+## This Submission
 
+I've done my best to create well written tests to the specifications of the contest. My project contains two directories with two differing test suites.
+
+- **Traditional**: This suite uses only Cypress to test the demo application provided by Applitools. Cypress is an amazing tool, but the application is designed to highlight some of the pitfalls of relying on one tool.
+
+- **Applitools**: This suite also uses Cypress but in more of a navigational capacity. Although I could have added the code to utilize Applitools while preserving the Cypress, they are designed for this project to only rely on visual validation.
+
+I've included more documentation on each of these approaches inside their respective directories. 
