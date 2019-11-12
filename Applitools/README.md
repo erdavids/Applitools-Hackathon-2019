@@ -2,6 +2,8 @@
 
 This was the fun approach. I removed the majority of the functional testing logic and relied on Cypress primarily for navigation. Applitools is used to compare screenshots from version 2 of the app against baseline images from version 1. You will quickly see how powerful Applitools can be and the relief it can provide. A true combination of the functional tests from Cypress along with the visual tests from Applitools would result in a new level of testing excellence.
 
+To see how these tests work without Applitools, check out [this directory](https://github.com/erdavids/Applitools-Hackathon-2019/tree/master/Traditional).
+
 ## Running the Tests
 
 In order to execute the Cypress tests, you can rely on the documentation found [here](https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements). An overview of the necessary commands can be found below:
@@ -47,7 +49,7 @@ Just like with the pure Cypress tests, we want version 2 of the application to m
 This test suite is made up of the following five tests, each with their own unique challenges:
 
 ### Login Page UI Elements Test
-This test was designed to verify that all the elements on the first version of the app exist and display properly.
+This test was designed to verify that all the elements on the first version of the app's authentication page exist and display properly.
 - Using Applitools, this test was reduced from **73 lines of code** to **14 lines**. A single screenshot is used to verify every element on the page.
 - You can see in the image below that Applitools identifies the errors we found earlier with Cypress as well as other issues like the formatting of the Remember Me toggle.
 
@@ -56,12 +58,12 @@ This test was designed to verify that all the elements on the first version of t
 ### Data-Driven Test
 Different combinations of inputs are used to test authentication. It's a simple app and will succeed with any username and password, but only if both are provided.
 - The amount of code for this test was similar since it still relied on Cypress for login attempts.
-- Applitools displays the issues found before as well as highlighting more formatting issues.
+- Applitools displays the issues found before as well as highlighting more formatting issues like the "Username must be present" error message.
 
 <p align="center"><img src="https://github.com/erdavids/Applitools-Hackathon-2019/blob/master/Applitools/Images/login-form-error.png"></p>
     
 ### Table Sort Test
-This was a breeze in Applitools. The task is sort a table in ascending order of the amount column and then verify the arrangement and data of each row. 
+This was a breeze in Applitools. The task is to sort a table in ascending order of the amount column and then verify the arrangement and data of each row. 
 - Using Applitools, this test was reduced from **92 lines of code** to **19 lines**. There are two tests, one screenshot before sorting the table and one after.
 - There are a lot of errors highlighted in the image below that show how incorrectly the table has been sorted. There's no need to have excessive information about each diverse element within each row.
 
@@ -69,7 +71,7 @@ This was a breeze in Applitools. The task is sort a table in ascending order of 
     
 ### Canvas Chart Test
 I assumed when I started this project that there would be a specification that couldn't be tested functionally. This was the one, in the form of a bar graph displayed within an inaccessible canvas element.
-- It was easy to validate the graph with Applitools, although I did have to add a couple hard waits in order to make sure the data was finishing rendering.
+- It was easy to validate the graph with Applitools, although I did have to add a couple hard waits in order to make sure the data had finished rendering.
 - The image below shows how Applitools found the issue with the January and July values in 2018.
 
 <p align="center"><img src="https://github.com/erdavids/Applitools-Hackathon-2019/blob/master/Applitools/Images/chart-with-2019.png"></p>
