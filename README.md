@@ -2,7 +2,7 @@
 
 This project represents a complete submission for the [Applitools Visual AI Rockstar Hackathon](https://applitools.com/hackathon).
 
-Please note that I've included detailed documentation about each approach in the **Traditional** and **Applitools** directory.
+Please note that I've included detailed documentation about each approach's results and challenges in the **Traditional** and **Applitools** directories.
 
 ## Tools
 
