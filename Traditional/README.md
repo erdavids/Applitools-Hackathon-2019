@@ -4,31 +4,19 @@ This project is the pure Cypress approach. It was fun working with the demo app 
 
 ## Running the Tests
 
-In order to execute the tests, you may need to run the following command within this directory:
+In order to execute the tests, you can rely on the documentation found [here](https://docs.cypress.io/guides/getting-started/installing-cypress.html#System-requirements)
 
+An overview of the necessary commands can be found below:
 ```
-npm install
-```
-
-You can alternatively install Cypress by running the following command:
-
-```
+// Installs to your ./node_modules directory
 npm install cypress
-```
 
-Once you have Cypress installed, simply run the following command:
-
-```
+// Executes your tests through the command line
 npx cypress run
-```
 
-If you would like to use the Cypress application to execute and interact with the tests, you can open it with the following command:
-
-```
+// Alternatively, open the Cypress application and test
 npx cypress open
 ```
-
-Once it's open, click on the **TraditionalTests.js** to execute the tests.
 
 ## Version 1 Test Results
 
