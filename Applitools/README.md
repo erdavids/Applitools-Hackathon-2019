@@ -1,6 +1,6 @@
 # Visual Approach w/ Applitools and Cypress
 
-This was the fun approach. I removed the majority of the functional testing logic and relied on Cypress primarily for navigation. Applitools is used to compare screenshots from version 2 of the app against baseline images from version 1. You will quickly see how powerful Applitools can be and the relief it can provide. A true combination of the functional tests from Cypress along with the visual tests from Applitools would result in a new level of testing reliability.
+This was the fun approach. I removed the majority of the functional testing logic and relied on Cypress primarily for navigation. Applitools is used to compare screenshots from version 2 of the app against baseline images from version 1. You will quickly see how powerful Applitools can be and the relief it can provide. A true combination of the functional tests from Cypress along with the visual tests from Applitools would result in a new level of testing excellence.
 
 ## Running the Tests
 
