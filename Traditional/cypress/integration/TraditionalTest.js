@@ -49,6 +49,7 @@ beforeEach(() => {
     cy.visit(main_app)
 })
 
+// Verify the Login Page's Appearance
 describe('Login Page UI Elements Test', function() {
 
     it('has a logo', () => {
@@ -101,6 +102,7 @@ describe('Login Page UI Elements Test', function() {
     })
 })
 
+// Test different login attempts
 describe('Data-Driven Test', function() {
     it('fails login without username or password provided', () => {
         cy.login('', '')
@@ -133,6 +135,7 @@ describe('Data-Driven Test', function() {
         cy.url().should('be', 'https://demo.applitools.com/hackathonApp.html')
     })
 })
+
 
 describe('Table Sort Test', function() {
     it('maintains data integrity with table sorted by ascending amounts', () => {
