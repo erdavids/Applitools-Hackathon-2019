@@ -249,7 +249,7 @@ describe('Canvas Chart Test', function() {
     })
 })
 
-describe.only('Dynamic Content Test', function() {
+describe('Dynamic Content Test', function() {
     it('displays the first flashing advertisement', () => {
         // Version 1 (Working Version)
         cy.visit(ad_page)
